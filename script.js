@@ -71,10 +71,3 @@ if (typingElement) {
     typeText();
 }
 
-// Current Year in Footer
-const footer = document.querySelector("footer p");
-
-if (footer) {
-    footer.innerHTML =
-        `© ${new Date().getFullYear()} Lowell Nikoleigh Pascua | Virtual Assistant Portfolio`;
-}
