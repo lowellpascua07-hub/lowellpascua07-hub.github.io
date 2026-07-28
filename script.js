@@ -1,26 +1,4 @@
-// Theme Toggle
-const toggleBtn = document.getElementById("theme-toggle");
 
-// Load saved theme
-if (localStorage.getItem("theme") === "light") {
-    document.body.classList.add("light-mode");
-    toggleBtn.textContent = "☀️";
-} else {
-    toggleBtn.textContent = "🌙";
-}
-
-// Switch theme
-toggleBtn.addEventListener("click", () => {
-    document.body.classList.toggle("light-mode");
-
-    if (document.body.classList.contains("light-mode")) {
-        localStorage.setItem("theme", "light");
-        toggleBtn.textContent = "☀️";
-    } else {
-        localStorage.setItem("theme", "dark");
-        toggleBtn.textContent = "🌙";
-    }
-});
 document.querySelectorAll(".project-gallery").forEach(gallery => {
 
     const mainImage = gallery.querySelector(".main-image");
@@ -35,6 +13,18 @@ document.querySelectorAll(".project-gallery").forEach(gallery => {
 
     });
 
+});
+const menu = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+menu.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+document.querySelectorAll(".nav-links a").forEach(link=>{
+    link.addEventListener("click",()=>{
+        menu.classList.remove("active");
+        navLinks.classList.remove("active");
+    });
 });
 // Smooth reveal animation on scroll
 const sections = document.querySelectorAll("section");
