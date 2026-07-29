@@ -43,7 +43,7 @@ window.addEventListener("scroll", revealSection);
 window.addEventListener("load", revealSection);
 
 // Typing Effect
-const text = "Aspiring Virtual Assistant Ready to Help Businesses Stay Organized and Productive.";
+const text = "Aspiring Virtual Assistant with practical experience in Email Management, CRM Management, Calendar Management, Data Entry, eCommerce Operations, and WordPress Web Design. Dedicated to helping businesses streamline operations and enhance their online presence.";
 const typingElement = document.querySelector(".hero p");
 
 let index = 0;
