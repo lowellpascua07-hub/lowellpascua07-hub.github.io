@@ -22,7 +22,7 @@ body{
             rgba(5,8,22,.88),
             rgba(5,8,22,.92)
         ),
-        url("background.png");
+        url("background.webp");
 
     background-size: cover;
     background-position: center;
@@ -44,7 +44,7 @@ header{
             rgba(5,8,22,.82),
             rgba(5,8,22,.90)
         ),
-        url("background1.png");
+        url("background1.webp");
 
     background-size:cover;
     background-position:center;
